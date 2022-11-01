@@ -10,13 +10,16 @@ export class EmpleadoComponent implements OnInit {
   nombre="Pepe";
   apellido = "Domínguez";
   edad = 33;
-  empresa = "laquesea";
+  // empresa = "laquesea";
+
 
   /*
   getEdad() {
     return this.edad;
   }
   */
+
+
 
   constructor() { }
 
