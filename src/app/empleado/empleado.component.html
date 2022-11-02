@@ -5,9 +5,17 @@
 
 <p>
     Introduce la empresa:
-    <input type="text" #empresa (keyup)="0"> <!-- #empresa es como si fuera id="empresa" -->
+    <!-- #empresa es como si fuera id="empresa" -->
+    <input type="text" #empresa (keyup)="0" [disabled]="statusInputText">
 
+</p>
+<p>{{ txtLogueado }}</p>
+<p>
+  Logueado: <input type="radio" value="S" name="rdLogin" id="rdLogin" [checked]="userLogged" (click)="showUserChecked($event)"><br>
+  No Logueado: <input type="radio" value="N" name="rdLogin" (click)="showUserChecked($event)"><br>
 
+  <!-- llamar a una función del TS -->
+  {{ activarUser() }}
 </p>
 
 
